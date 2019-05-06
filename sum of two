@@ -9,16 +9,19 @@ void add(int x,int y)
 {
    int z;
    z=x+y;
-   output(int z);
+   return z;
 }
-void output(int s)
+void output(int x,int y)
 {
-  printf("\nThe sum is %d",s);
+  int c;
+  c=add(x,y);
+  printf("\nThe sum is %d",c);
 }  
 main()
 {
   int a,b;
   getinput(&a,&b);
   add(a,b);
+  output(a,b);
   getch();
 }  
